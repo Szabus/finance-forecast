@@ -29,5 +29,5 @@ jobs:
           application_name: finance-forecast-app
           environment_name: finance-forecast-app-env
           version_label: ${{ github.sha }}
-          region: eu-central-1
+          region: eu-north-1
           deployment_package: deploy.zip
