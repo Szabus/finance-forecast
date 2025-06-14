@@ -8,6 +8,10 @@ class ExpenseInput(BaseModel):
     rent: float
     transport: float
 
+@app.get("/")
+def read_root():
+    return {"message": "Welcome to Finance Forecast App"}
+
 @app.post("/predict")
 def predict_expense(data: ExpenseInput):
     total = data.food + data.rent + data.transport
